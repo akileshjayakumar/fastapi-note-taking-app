@@ -1,0 +1,33 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: List backend directory contents (Debugging)
+      run: |
+        cd backend
+        ls -la
+
+    - name: Build the Docker image for backend
+      run: |
+        cd backend
+        docker build -t my-note-app-backend -f Dockerfile .
+
+    - name: List frontend directory contents (Debugging)
+      run: |
+        cd frontend
+        ls -la
+
+    - name: Build the Docker image for frontend
+      run: |
+        cd frontend
+        docker build -t my-note-app-frontend -f Dockerfile .
