@@ -19,7 +19,7 @@ To set up the project locally or deploy using Docker, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourgithubusername/note-taking-app.git
+   git clone https://github.com/akileshjayakumar/note-taking-app.git
    ```
 2. **Navigate to the project directory:**
    ```bash
