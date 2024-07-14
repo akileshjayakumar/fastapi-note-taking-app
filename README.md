@@ -1,4 +1,4 @@
-# Note Taking App
+# FastAPI Note Taking App
 
 ## Key Features
 
